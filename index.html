@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>AR2 • Turbina</title>
+    <title>AR2 • turbina</title>
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   </head>
 
   <body style="font-family: system-ui, Arial; margin: 24px; max-width: 920px;">
-    <h1 style="margin: 0 0 8px;">Turbina (3D + AR)</h1>
+    <h1 style="margin: 0 0 8px;">turbina (3D + AR)</h1>
     <p style="margin: 0 0 16px; opacity: .8;">
       Abra no Chrome do Android e toque em “Ver em AR”.
     </p>
@@ -28,7 +28,7 @@
 
     <model-viewer
       src="turbina.glb"
-      alt="Turbina 3D"
+      alt="turbina 3D"
       ar
       ar-modes="scene-viewer webxr"
       camera-controls
@@ -38,7 +38,7 @@
 
     <script>
       // Link automático do Scene Viewer usando o .glb hospedado no GitHub Pages
-      const glbUrl = new URL("balanco.glb", window.location.href).href;
+      const glbUrl = new URL("turbina.glb", window.location.href).href;
       const sceneViewerUrl =
         "https://arvr.google.com/scene-viewer/1.0?file=" +
         encodeURIComponent(glbUrl) +
