@@ -3,15 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AR2 - Modelo</title>
+
+  <!-- Model Viewer -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
   <style>
-    body { margin: 0; }
-    model-viewer { width: 100vw; height: 100vh; }
+    body { margin: 0; font-family: system-ui, Arial; }
+    header { padding: 10px 12px; font-size: 14px; }
+    model-viewer { width: 100vw; height: calc(100vh - 44px); background: #f3f3f3; }
   </style>
 </head>
 <body>
+  <header>Se você está vendo isto, a página carregou. Agora o 3D deve aparecer abaixo.</header>
+
   <model-viewer
-    src="modelo.glb"
+    src="balanco.glb"
     camera-controls
     auto-rotate
     ar
